@@ -3,5 +3,23 @@
 @tailwind utilities;
 
 .flex-center {
-	@apply flex justify-center items-center;
+	@apply 
+	flex 
+	justify-center 
+	items-center;
+}
+.btn-player {
+	@apply
+	flex-center
+	w-[40px]
+	h-[40px]
+	rounded-full
+	shadow-xl
+	text-text
+	hover:text-primary
+}
+.in-range-player {
+	@apply
+	accent-primary
+	hover:accent-white;
 }

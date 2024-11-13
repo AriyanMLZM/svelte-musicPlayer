@@ -1,12 +1,13 @@
 <script>
 	export let music
 	export let selectSong
+	export let index
 </script>
 
 <button
-	on:click={() => selectSong(music)}
+	on:click={() => selectSong(index)}
 	type="button"
-	class="flex gap-[20px] items-center text-white p-[10px] hover:bg-slate-400/30"
+	class="flex gap-[20px] items-center text-text py-[10px] px-[30px] hover:bg-slate-400/60 hover:text-white"
 >
 	<div class="w-[80px] h-[80px] flex-center">
 		<img
@@ -15,5 +16,5 @@
 			class="w-full h-full object-cover rounded-[10px]"
 		/>
 	</div>
-	<h2>{music.title}</h2>
+	<h2 class="text-[20px]">{music.title}</h2>
 </button>
