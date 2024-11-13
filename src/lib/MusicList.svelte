@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Item } from './'
+	import { Item } from './index.svelte'
 	export let musics
 	export let selectSong
 </script>

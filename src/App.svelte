@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { MusicList, MusicMain, Player } from './lib/index'
+	import { MusicList, MusicMain, Player } from './lib/index.svelte'
 
-	import musics from './data/musics'
+	import musics from './data/musics.svelte'
 
 	let index: number = 0
 	let selectedMusic: any

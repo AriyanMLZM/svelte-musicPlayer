@@ -4,7 +4,7 @@ import {
 	banditoMusic,
 	loveMusic,
 	endlessSongMusic,
-} from '../assets/music'
+} from '../assets/music/index.svelte'
 
 import {
 	afterDarkCover,
@@ -12,7 +12,7 @@ import {
 	endlessCover,
 	loveCover,
 	trenchCover,
-} from '../assets/covers'
+} from '../assets/covers/index.svelte'
 
 const musics = [
 	{
@@ -40,7 +40,7 @@ const musics = [
 		cover: loveCover,
 	},
 	{
-		title: "Bandito",
+		title: 'Bandito',
 		singer: 'Twenty One Pilots',
 		src: banditoMusic,
 		cover: trenchCover,
