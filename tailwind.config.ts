@@ -11,6 +11,9 @@ const config: Config = {
 			},
 		},
 	},
+	future: {
+		hoverOnlyWhenSupported: true
+	},
 	plugins: [],
 }
 

@@ -3,26 +3,24 @@
 @tailwind utilities;
 
 body {
-	@apply bg-background
+	@apply bg-background;
 }
 .flex-center {
-	@apply 
-	flex 
+	@apply flex 
 	justify-center 
 	items-center;
 }
 .btn-player {
-	@apply
-	flex-center
+	@apply flex-center
 	w-[40px]
 	h-[40px]
 	rounded-full
 	shadow-xl
 	text-text
 	hover:text-primary
+	active:text-primary;
 }
 .in-range-player {
-	@apply
-	accent-primary
+	@apply accent-primary
 	hover:accent-white;
 }
