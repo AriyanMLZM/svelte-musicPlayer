@@ -24,16 +24,16 @@
 	}
 </script>
 
-<main class="w-screen h-screen bg-background flex">
-	<section class="w-[30%] h-full">
-		<MusicList {musics} {selectSong} />
-	</section>
-	<section class="w-[70%] h-full flex-center shadow-lg">
+<main class="w-full h-screen md:flex-row-reverse md:flex">
+	<section class="md:w-[70%] w-full h-full flex-center shadow-lg">
 		<div
 			class="flex-center w-[400px] h-[500px] flex-col shadow-2xl rounded-[20px] gap-[20px]"
 		>
 			<MusicMain {selectedMusic} />
 			<Player {selectedMusic} {songOperation} />
 		</div>
+	</section>
+	<section class="md:w-[30%] w-full h-full">
+		<MusicList {musics} {selectSong} />
 	</section>
 </main>
