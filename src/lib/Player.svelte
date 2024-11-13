@@ -20,7 +20,7 @@
 	$: calcCurrentTime = calcTime(currentTime)
 </script>
 
-<div class="w-full flex-center flex-col px-[20px]">
+<div class="w-full flex-center flex-col px-[20px] gap-[20px]">
 	<audio
 		bind:paused
 		bind:currentTime
@@ -39,9 +39,7 @@
 		max={duration}
 		class="w-full in-range-player"
 	/>
-	<div
-		class="flex items-center justify-between w-full px-[10px] select-none mt-[20px]"
-	>
+	<div class="flex items-center justify-between w-full px-[10px] select-none">
 		<h2 class="text-text">{calcCurrentTime.minute}:{calcCurrentTime.second}</h2>
 		<div class="flex-center w-full gap-[10px]">
 			<button
@@ -75,12 +73,27 @@
 		</div>
 		<h2 class="text">{calcDuration.minute}:{calcDuration.second}</h2>
 	</div>
-	<!-- <input
-		bind:value={volume}
-		type="range"
-		step="0.01"
-		min="0"
-		max="1"
-		class="w-[400px] hover:accent-black"
-	/> -->
+	<div class="mt-[10px] w-full flex-center gap-[10px]">
+		<input
+			bind:value={volume}
+			on:change={() => (muted = false)}
+			type="range"
+			step="0.01"
+			min="0"
+			max="1"
+			class="w-[100px] in-range-player"
+		/>
+		<button
+			aria-label="next"
+			class="btn-player"
+			on:click={() => (muted = !muted)}
+			type="button"
+		>
+			{#if muted}
+				<i class="fa fa-volume-mute"></i>
+			{:else}
+				<i class="fa fa-volume-up"></i>
+			{/if}
+		</button>
+	</div>
 </div>

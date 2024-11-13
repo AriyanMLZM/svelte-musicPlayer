@@ -3,13 +3,14 @@
 
 	import musics from './data/musics'
 
-	let index: any = 0
+	let index: number = 0
 	let selectedMusic: any
 
 	$: selectSong(index)
 
-	const selectSong = (index: number) => {
-		selectedMusic = musics[index]
+	const selectSong = (ind: number) => {
+		index = ind
+		selectedMusic = musics[ind]
 	}
 	const songOperation = (action: number) => {
 		switch (action) {
