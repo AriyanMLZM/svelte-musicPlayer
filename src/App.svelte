@@ -1,10 +1,9 @@
 <script lang="ts">
-	import { MusicList, MusicMain, Player } from './lib/index.svelte'
-
-	import musics from './data/musics.svelte'
+	import { MusicList, MusicInfo, Player } from './lib'
+	import musics from './data/musics.json'
 
 	let index: number = 0
-	let selectedMusic: any
+	let selectedMusic: IMusic
 
 	$: selectSong(index)
 
@@ -12,12 +11,12 @@
 		index = ind
 		selectedMusic = musics[ind]
 	}
-	const songOperation = (action: number) => {
+	const songOperation = (action: 'next' | 'prev') => {
 		switch (action) {
-			case 0:
+			case 'prev':
 				index = index === 0 ? musics.length - 1 : index - 1
 				break
-			case 1:
+			case 'next':
 				index = index === musics.length - 1 ? 0 : index + 1
 				break
 		}
@@ -29,11 +28,11 @@
 		<div
 			class="flex-center w-[400px] h-[500px] flex-col shadow-2xl rounded-[20px] gap-[20px]"
 		>
-			<MusicMain {selectedMusic} />
+			<MusicInfo {selectedMusic} />
 			<Player {selectedMusic} {songOperation} />
 		</div>
 	</section>
 	<section class="md:w-[30%] w-full h-full">
-		<MusicList {musics} {selectSong} />
+		<MusicList {selectSong} />
 	</section>
 </main>

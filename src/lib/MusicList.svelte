@@ -1,7 +1,7 @@
 <script lang="ts">
-	import { Item } from './index.svelte'
-	export let musics
-	export let selectSong
+	import { Item } from '.'
+	import musics from '../data/musics.json'
+	export let selectSong: (index: number) => void
 </script>
 
 <div class="w-full flex items-center justify-end h-[50px] p-[20px]">

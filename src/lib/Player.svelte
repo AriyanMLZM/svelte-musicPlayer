@@ -1,6 +1,6 @@
 <script lang="ts">
-	export let selectedMusic
-	export let songOperation
+	export let selectedMusic: IMusic
+	export let songOperation: (action: 'next' | 'prev') => void
 
 	let currentTime = 0
 	let duration: number
@@ -27,7 +27,7 @@
 		bind:duration
 		bind:muted
 		bind:volume
-		on:ended={() => songOperation(1)}
+		on:ended={() => songOperation('next')}
 		autoplay
 		src={selectedMusic.src}
 	></audio>
@@ -45,7 +45,7 @@
 			<button
 				aria-label="prev"
 				class="btn-player"
-				on:click={() => songOperation(0)}
+				on:click={() => songOperation('prev')}
 				type="button"
 			>
 				<i class="fa fa-step-backward"></i>
@@ -65,7 +65,7 @@
 			<button
 				aria-label="next"
 				class="btn-player"
-				on:click={() => songOperation(1)}
+				on:click={() => songOperation('next')}
 				type="button"
 			>
 				<i class="fa fa-step-forward"></i>

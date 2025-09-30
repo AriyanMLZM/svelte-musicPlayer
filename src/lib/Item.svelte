@@ -1,7 +1,7 @@
-<script>
-	export let music
-	export let selectSong
-	export let index
+<script lang="ts">
+	export let music: IMusic
+	export let selectSong: (index: number) => void
+	export let index: number
 </script>
 
 <button
