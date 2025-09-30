@@ -1,0 +1,32 @@
+[
+	{
+		"title": "Bandito",
+		"singer": "Twenty One Pilots",
+		"src": "/musics/bandito.mp3",
+		"cover": "/covers/trench.jpg"
+	},
+	{
+		"title": "After Dark",
+		"singer": "Mr Kitty",
+		"src": "/musics/after_dark.mp3",
+		"cover": "/covers/afterdark.jpg"
+	},
+	{
+		"title": "Perfect Girl",
+		"singer": "Mareux",
+		"src": "/musics/perfect_girl.mp3",
+		"cover": "/covers/mareux.jpg"
+	},
+	{
+		"title": "Endless Song",
+		"singer": "Aaron",
+		"src": "/musics/endless_song.mp3",
+		"cover": "/covers/endless.jpg"
+	},
+	{
+		"title": "Can't Help Falling In Love",
+		"singer": "Twenty One Pilots",
+		"src": "/musics/love.mp3",
+		"cover": "/covers/love.jpg"
+	}
+]
