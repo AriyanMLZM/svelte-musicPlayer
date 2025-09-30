@@ -1,26 +1,40 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
 
-body {
-	@apply bg-background;
+@theme {
+	--color-primary: #38bdf8;
+	--color-background: #bad5ff;
+	--color-text: #222222;
 }
-.flex-center {
-	@apply flex 
-	justify-center 
-	items-center;
+
+@layer base {
+	body {
+		@apply bg-background;
+	}
 }
-.btn-player {
-	@apply flex-center
-	w-[40px]
-	h-[40px]
-	rounded-full
-	shadow-xl
-	text-text
-	hover:text-primary
-	active:text-primary;
+
+@layer utilities {
+	.flex-center {
+		@apply flex 
+		justify-center 
+		items-center;
+	}
 }
-.in-range-player {
-	@apply accent-primary
-	hover:accent-white;
+
+@layer components {
+	.btn-player {
+		@apply flex
+		items-center
+		justify-center
+		w-[40px]
+		h-[40px]
+		rounded-full
+		shadow-xl
+		text-text
+		hover:text-primary
+		active:text-primary;
+	}
+	.in-range-player {
+		@apply accent-primary
+		hover:accent-white;
+	}
 }

@@ -33,6 +33,6 @@
 		</div>
 	</section>
 	<section class="md:w-[30%] w-full h-full">
-		<MusicList {selectSong} />
+		<MusicList {selectSong} active_index={index} />
 	</section>
 </main>
