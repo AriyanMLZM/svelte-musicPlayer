@@ -1,4 +1,6 @@
 <script lang="ts">
+	import Icon from '@iconify/svelte'
+
 	export let selectedMusic: IMusic
 	export let songOperation: (action: 'next' | 'prev') => void
 
@@ -48,7 +50,7 @@
 				on:click={() => songOperation('prev')}
 				type="button"
 			>
-				<i class="fa fa-step-backward"></i>
+				<Icon icon="mage:previous-fill" class="text-[20px]" />
 			</button>
 			<button
 				aria-label="play-pause"
@@ -57,9 +59,9 @@
 				type="button"
 			>
 				{#if paused}
-					<i class="fa fa-play"></i>
+					<Icon icon="mage:play-fill" class="text-[20px]" />
 				{:else}
-					<i class="fa fa-pause"></i>
+					<Icon icon="mage:pause-fill" class="text-[20px]" />
 				{/if}
 			</button>
 			<button
@@ -68,7 +70,7 @@
 				on:click={() => songOperation('next')}
 				type="button"
 			>
-				<i class="fa fa-step-forward"></i>
+				<Icon icon="mage:next-fill" class="text-[20px]" />
 			</button>
 		</div>
 		<h2 class="text">{calcDuration.minute}:{calcDuration.second}</h2>
@@ -90,9 +92,9 @@
 			type="button"
 		>
 			{#if muted}
-				<i class="fa fa-volume-mute"></i>
+				<Icon icon="mage:volume-mute-fill" class="text-[25px]" />
 			{:else}
-				<i class="fa fa-volume-up"></i>
+				<Icon icon="mage:volume-up-fill" class="text-[25px]" />
 			{/if}
 		</button>
 	</div>

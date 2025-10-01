@@ -13,6 +13,7 @@
 		"check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json"
 	},
 	"devDependencies": {
+		"@iconify/svelte": "^5.0.2",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
 		"@tailwindcss/vite": "^4.1.13",
 		"@tsconfig/svelte": "^5.0.4",
