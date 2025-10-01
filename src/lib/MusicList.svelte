@@ -6,7 +6,7 @@
 </script>
 
 <div class="w-full flex items-center justify-end h-[50px] p-[20px]">
-	<i class="fa fa-music text-text text-[25px]"></i>
+	<i class="fa fa-music text-[25px]"></i>
 </div>
 <div class="w-full flex flex-col">
 	{#each musics as music, index}

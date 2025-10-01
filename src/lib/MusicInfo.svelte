@@ -13,7 +13,7 @@
 		/>
 	</div>
 	<div class="flex-center flex-col gap-[10px] p-[20px]">
-		<h1 class="text-text text-[20px] font-bold">{selectedMusic.title}</h1>
-		<h2 class="text-text text-[18px]">{selectedMusic.singer}</h2>
+		<h1 class="text-[20px] font-bold">{selectedMusic.title}</h1>
+		<h2 class="text-[18px]">{selectedMusic.singer}</h2>
 	</div>
 </section>

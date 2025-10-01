@@ -8,8 +8,8 @@
 <button
 	on:click={() => selectSong(index)}
 	type="button"
-	class="flex gap-[20px] items-center text-text py-[10px] px-[30px] hover:bg-slate-400/60 hover:text-white active:bg-slate-400/60 active:text-white {active &&
-		'bg-slate-400/60 text-white'}"
+	class="flex gap-[20px] items-center py-[10px] px-[30px] hover:bg-white/10 active:bg-white/10 {active &&
+		'bg-white/10'}"
 >
 	<div class="w-[80px] h-[80px] flex-center">
 		<img

@@ -3,30 +3,35 @@
 		"title": "Bandito",
 		"singer": "Twenty One Pilots",
 		"src": "./musics/bandito.mp3",
-		"cover": "./covers/trench.jpg"
+		"cover": "./covers/trench.jpg",
+		"accent": "#FCFD02"
 	},
 	{
 		"title": "After Dark",
 		"singer": "Mr Kitty",
 		"src": "./musics/after_dark.mp3",
-		"cover": "./covers/afterdark.jpg"
+		"cover": "./covers/afterdark.jpg",
+		"accent": "#941F28"
 	},
 	{
 		"title": "Perfect Girl",
 		"singer": "Mareux",
 		"src": "./musics/perfect_girl.mp3",
-		"cover": "./covers/mareux.jpg"
+		"cover": "./covers/mareux.jpg",
+		"accent": "#94A7A1"
 	},
 	{
 		"title": "Endless Song",
 		"singer": "Aaron",
 		"src": "./musics/endless_song.mp3",
-		"cover": "./covers/endless.jpg"
+		"cover": "./covers/endless.jpg",
+		"accent": "#E5CF69"
 	},
 	{
 		"title": "Can't Help Falling In Love",
 		"singer": "Twenty One Pilots",
 		"src": "./musics/love.mp3",
-		"cover": "./covers/love.jpg"
+		"cover": "./covers/love.jpg",
+		"accent": "#AB9ADE"
 	}
 ]

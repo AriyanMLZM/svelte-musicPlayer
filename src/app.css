@@ -1,14 +1,14 @@
 @import 'tailwindcss';
 
 @theme {
-	--color-primary: #38bdf8;
-	--color-background: #bad5ff;
-	--color-text: #222222;
+	--color-primary: #ffffff;
+	--color-background: #0a0a0a;
+	--color-text: #fff;
 }
 
 @layer base {
 	body {
-		@apply bg-background;
+		@apply bg-background text-text;
 	}
 }
 
@@ -33,7 +33,7 @@
 		hover:text-primary
 		active:text-primary;
 	}
-	.in-range-player {
+	.input-range {
 		@apply accent-primary
 		hover:accent-white;
 	}

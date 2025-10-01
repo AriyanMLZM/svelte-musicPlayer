@@ -37,10 +37,10 @@
 		step="1"
 		min="0"
 		max={duration}
-		class="w-full in-range-player"
+		class="w-full input-range"
 	/>
 	<div class="flex items-center justify-between w-full px-[10px] select-none">
-		<h2 class="text-text">{calcCurrentTime.minute}:{calcCurrentTime.second}</h2>
+		<h2>{calcCurrentTime.minute}:{calcCurrentTime.second}</h2>
 		<div class="flex-center w-full gap-[10px]">
 			<button
 				aria-label="prev"
@@ -81,7 +81,7 @@
 			step="0.01"
 			min="0"
 			max="1"
-			class="w-[100px] in-range-player"
+			class="w-[100px] input-range"
 		/>
 		<button
 			aria-label="next"
