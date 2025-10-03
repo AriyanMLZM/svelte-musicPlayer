@@ -1,7 +1,7 @@
 <script lang="ts">
 	import Icon from '@iconify/svelte'
 
-	export let selectedMusic: IMusic
+	export let selectedSong: IMusic
 	export let songOperation: (action: 'next' | 'prev') => void
 
 	let currentTime = 0
@@ -31,7 +31,7 @@
 		bind:volume
 		on:ended={() => songOperation('next')}
 		autoplay
-		src={selectedMusic.src}
+		src={selectedSong.src}
 	></audio>
 	<input
 		bind:value={currentTime}
@@ -73,7 +73,7 @@
 				<Icon icon="mage:next-fill" class="text-[20px]" />
 			</button>
 		</div>
-		<h2 class="text">{calcDuration.minute}:{calcDuration.second}</h2>
+		<h2>{calcDuration.minute}:{calcDuration.second}</h2>
 	</div>
 	<div class="mt-[10px] w-full flex-center gap-[10px]">
 		<input
